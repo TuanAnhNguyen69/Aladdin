@@ -1,0 +1,81 @@
+﻿  Mario.cpp
+  c:\users\razor\desktop\mario-ozawa-game - copy\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+c:\users\razor\desktop\mario-ozawa-game - copy\marioozawa\texture.h(49): warning C4838: conversion from 'UINT' to 'LONG' requires a narrowing conversion
+c:\users\razor\desktop\mario-ozawa-game - copy\marioozawa\quadtree.h(13): warning C4005: 'MAX_OBJ_ID': macro redefinition
+  c:\users\razor\desktop\mario-ozawa-game - copy\marioozawa\global.h(32): note: see previous definition of 'MAX_OBJ_ID'
+c:\users\razor\desktop\mario-ozawa-game - copy\marioozawa\mario.cpp(15): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+c:\users\razor\desktop\mario-ozawa-game - copy\marioozawa\mario.cpp(16): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+  Generating Code...
+  Compiling...
+  main.cpp
+  c:\users\razor\desktop\mario-ozawa-game - copy\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+c:\users\razor\desktop\mario-ozawa-game - copy\marioozawa\texture.h(49): warning C4838: conversion from 'UINT' to 'LONG' requires a narrowing conversion
+  QuadTree.cpp
+  c:\users\razor\desktop\mario-ozawa-game - copy\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+c:\users\razor\desktop\mario-ozawa-game - copy\marioozawa\texture.h(49): warning C4838: conversion from 'UINT' to 'LONG' requires a narrowing conversion
+c:\users\razor\desktop\mario-ozawa-game - copy\marioozawa\quadtree.h(13): warning C4005: 'MAX_OBJ_ID': macro redefinition
+  c:\users\razor\desktop\mario-ozawa-game - copy\marioozawa\global.h(32): note: see previous definition of 'MAX_OBJ_ID'
+c:\users\razor\desktop\mario-ozawa-game - copy\marioozawa\quadtree.cpp(43): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\users\razor\desktop\mario-ozawa-game - copy\marioozawa\quadtree.cpp(53): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  PlaySence.cpp
+  c:\users\razor\desktop\mario-ozawa-game - copy\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+c:\users\razor\desktop\mario-ozawa-game - copy\marioozawa\texture.h(49): warning C4838: conversion from 'UINT' to 'LONG' requires a narrowing conversion
+c:\users\razor\desktop\mario-ozawa-game - copy\marioozawa\quadtree.h(13): warning C4005: 'MAX_OBJ_ID': macro redefinition
+  c:\users\razor\desktop\mario-ozawa-game - copy\marioozawa\global.h(32): note: see previous definition of 'MAX_OBJ_ID'
+c:\users\razor\desktop\mario-ozawa-game - copy\marioozawa\playsence.h(14): warning C4005: 'TIME_FOR_LEVEL': macro redefinition
+  c:\users\razor\desktop\mario-ozawa-game - copy\marioozawa\maploader.h(12): note: see previous definition of 'TIME_FOR_LEVEL'
+c:\users\razor\desktop\mario-ozawa-game - copy\marioozawa\playsence.cpp(52): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\razor\desktop\mario-ozawa-game - copy\marioozawa\playsence.cpp(131): warning C4244: '=': conversion from 'float' to 'LONG', possible loss of data
+c:\users\razor\desktop\mario-ozawa-game - copy\marioozawa\playsence.cpp(175): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: see declaration of 'sprintf'
+c:\users\razor\desktop\mario-ozawa-game - copy\marioozawa\playsence.cpp(181): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: see declaration of 'sprintf'
+c:\users\razor\desktop\mario-ozawa-game - copy\marioozawa\playsence.cpp(188): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: see declaration of 'sprintf'
+c:\users\razor\desktop\mario-ozawa-game - copy\marioozawa\playsence.cpp(251): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  MenuSence.cpp
+  c:\users\razor\desktop\mario-ozawa-game - copy\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+c:\users\razor\desktop\mario-ozawa-game - copy\marioozawa\texture.h(49): warning C4838: conversion from 'UINT' to 'LONG' requires a narrowing conversion
+c:\users\razor\desktop\mario-ozawa-game - copy\marioozawa\quadtree.h(13): warning C4005: 'MAX_OBJ_ID': macro redefinition
+  c:\users\razor\desktop\mario-ozawa-game - copy\marioozawa\global.h(32): note: see previous definition of 'MAX_OBJ_ID'
+c:\users\razor\desktop\mario-ozawa-game - copy\marioozawa\playsence.h(14): warning C4005: 'TIME_FOR_LEVEL': macro redefinition
+  c:\users\razor\desktop\mario-ozawa-game - copy\marioozawa\maploader.h(12): note: see previous definition of 'TIME_FOR_LEVEL'
+c:\users\razor\desktop\mario-ozawa-game - copy\marioozawa\menusence.cpp(80): warning C4244: '=': conversion from 'float' to 'LONG', possible loss of data
+  MarioGame.cpp
+  c:\users\razor\desktop\mario-ozawa-game - copy\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+c:\users\razor\desktop\mario-ozawa-game - copy\marioozawa\texture.h(49): warning C4838: conversion from 'UINT' to 'LONG' requires a narrowing conversion
+c:\users\razor\desktop\mario-ozawa-game - copy\marioozawa\quadtree.h(13): warning C4005: 'MAX_OBJ_ID': macro redefinition
+  c:\users\razor\desktop\mario-ozawa-game - copy\marioozawa\global.h(32): note: see previous definition of 'MAX_OBJ_ID'
+c:\users\razor\desktop\mario-ozawa-game - copy\marioozawa\playsence.h(14): warning C4005: 'TIME_FOR_LEVEL': macro redefinition
+  c:\users\razor\desktop\mario-ozawa-game - copy\marioozawa\maploader.h(12): note: see previous definition of 'TIME_FOR_LEVEL'
+c:\users\razor\desktop\mario-ozawa-game - copy\marioozawa\mariogame.cpp(56): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\time.h(505): note: see declaration of 'localtime'
+c:\users\razor\desktop\mario-ozawa-game - copy\marioozawa\mariogame.cpp(57): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: see declaration of 'sprintf'
+c:\users\razor\desktop\mario-ozawa-game - copy\marioozawa\mariogame.cpp(61): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: see declaration of 'sprintf'
+c:\users\razor\desktop\mario-ozawa-game - copy\marioozawa\mariogame.cpp(65): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: see declaration of 'sprintf'
+c:\users\razor\desktop\mario-ozawa-game - copy\marioozawa\mariogame.cpp(81): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: see declaration of 'sprintf'
+  MapLoader.cpp
+  c:\users\razor\desktop\mario-ozawa-game - copy\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+c:\users\razor\desktop\mario-ozawa-game - copy\marioozawa\texture.h(49): warning C4838: conversion from 'UINT' to 'LONG' requires a narrowing conversion
+c:\users\razor\desktop\mario-ozawa-game - copy\marioozawa\quadtree.h(13): warning C4005: 'MAX_OBJ_ID': macro redefinition
+  c:\users\razor\desktop\mario-ozawa-game - copy\marioozawa\global.h(32): note: see previous definition of 'MAX_OBJ_ID'
+c:\users\razor\desktop\mario-ozawa-game - copy\marioozawa\maploader.cpp(170): warning C4018: '<': signed/unsigned mismatch
+c:\users\razor\desktop\mario-ozawa-game - copy\marioozawa\maploader.cpp(172): warning C4018: '<': signed/unsigned mismatch
+c:\users\razor\desktop\mario-ozawa-game - copy\marioozawa\maploader.cpp(62): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: see declaration of 'sprintf'
+c:\users\razor\desktop\mario-ozawa-game - copy\marioozawa\maploader.cpp(266): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\users\razor\desktop\mario-ozawa-game - copy\marioozawa\maploader.cpp(267): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  LoseGameSence.cpp
+  c:\users\razor\desktop\mario-ozawa-game - copy\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+c:\users\razor\desktop\mario-ozawa-game - copy\marioozawa\texture.h(49): warning C4838: conversion from 'UINT' to 'LONG' requires a narrowing conversion
+c:\users\razor\desktop\mario-ozawa-game - copy\marioozawa\quadtree.h(13): warning C4005: 'MAX_OBJ_ID': macro redefinition
+  c:\users\razor\desktop\mario-ozawa-game - copy\marioozawa\global.h(32): note: see previous definition of 'MAX_OBJ_ID'
+c:\users\razor\desktop\mario-ozawa-game - copy\marioozawa\playsence.h(14): warning C4005: 'TIME_FOR_LEVEL': macro redefinition
+  c:\users\razor\desktop\mario-ozawa-game - copy\marioozawa\maploader.h(12): note: see previous definition of 'TIME_FOR_LEVEL'
+  Generating Code...
+  MarioOzawa.vcxproj -> C:\Users\Razor\Desktop\Mario-Ozawa-Game - Copy\Debug\MarioOzawa.exe
+  MarioOzawa.vcxproj -> C:\Users\Razor\Desktop\Mario-Ozawa-Game - Copy\Debug\MarioOzawa.pdb (Full PDB)

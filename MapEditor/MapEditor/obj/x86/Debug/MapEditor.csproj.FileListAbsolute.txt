@@ -1,0 +1,12 @@
+C:\Users\Razor\Desktop\Mario-Ozawa-Game - Copy\MapEditor\MapEditor\bin\Debug\MapEditor.exe
+C:\Users\Razor\Desktop\Mario-Ozawa-Game - Copy\MapEditor\MapEditor\bin\Debug\MapEditor.pdb
+C:\Users\Razor\Desktop\Mario-Ozawa-Game - Copy\MapEditor\MapEditor\obj\x86\Debug\MapEditor.csprojResolveAssemblyReference.cache
+C:\Users\Razor\Desktop\Mario-Ozawa-Game - Copy\MapEditor\MapEditor\obj\x86\Debug\MapEditor.frmHelp.resources
+C:\Users\Razor\Desktop\Mario-Ozawa-Game - Copy\MapEditor\MapEditor\obj\x86\Debug\MapEditor.fmNewMap.resources
+C:\Users\Razor\Desktop\Mario-Ozawa-Game - Copy\MapEditor\MapEditor\obj\x86\Debug\MapEditor.frmAboutUs.resources
+C:\Users\Razor\Desktop\Mario-Ozawa-Game - Copy\MapEditor\MapEditor\obj\x86\Debug\MapEditor.frmSummary.resources
+C:\Users\Razor\Desktop\Mario-Ozawa-Game - Copy\MapEditor\MapEditor\obj\x86\Debug\MapEditor.MainForm.resources
+C:\Users\Razor\Desktop\Mario-Ozawa-Game - Copy\MapEditor\MapEditor\obj\x86\Debug\MapEditor.Properties.Resources.resources
+C:\Users\Razor\Desktop\Mario-Ozawa-Game - Copy\MapEditor\MapEditor\obj\x86\Debug\MapEditor.csproj.GenerateResource.Cache
+C:\Users\Razor\Desktop\Mario-Ozawa-Game - Copy\MapEditor\MapEditor\obj\x86\Debug\MapEditor.exe
+C:\Users\Razor\Desktop\Mario-Ozawa-Game - Copy\MapEditor\MapEditor\obj\x86\Debug\MapEditor.pdb

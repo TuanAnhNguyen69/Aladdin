@@ -1,7 +1,0 @@
-﻿  PlaySence.cpp
-  c:\program files (x86)\microsoft directx sdk (june 2010)\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-c:\users\razor\desktop\game\aladin\aladine\texture.h(49): warning C4838: conversion from 'UINT' to 'LONG' requires a narrowing conversion
-c:\users\razor\desktop\game\aladin\aladine\quadtree.h(13): warning C4005: 'MAX_OBJ_ID': macro redefinition
-  c:\users\razor\desktop\game\aladin\aladine\global.h(32): note: see previous definition of 'MAX_OBJ_ID'
-  Aladine.vcxproj -> C:\Users\Razor\Desktop\Game\Aladin\Debug\Aladine.exe
-  Aladine.vcxproj -> C:\Users\Razor\Desktop\Game\Aladin\Debug\Aladine.pdb (Full PDB)
