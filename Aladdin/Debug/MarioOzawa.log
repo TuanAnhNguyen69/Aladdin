@@ -1,0 +1,11 @@
+﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (MarioOzawa.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  Mario.cpp
+  c:\users\razor\desktop\mario-ozawa-game - copy\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+c:\users\razor\desktop\mario-ozawa-game - copy\aladdin\texture.h(49): warning C4838: conversion from 'UINT' to 'LONG' requires a narrowing conversion
+c:\users\razor\desktop\mario-ozawa-game - copy\aladdin\quadtree.h(13): warning C4005: 'MAX_OBJ_ID': macro redefinition
+  c:\users\razor\desktop\mario-ozawa-game - copy\aladdin\global.h(32): note: see previous definition of 'MAX_OBJ_ID'
+c:\users\razor\desktop\mario-ozawa-game - copy\aladdin\mario.cpp(18): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+c:\users\razor\desktop\mario-ozawa-game - copy\aladdin\mario.cpp(19): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+c:\users\razor\desktop\mario-ozawa-game - copy\aladdin\mario.cpp(22): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+  MarioOzawa.vcxproj -> C:\Users\Razor\Desktop\Mario-Ozawa-Game - Copy\Debug\Aladdin.exe
+  MarioOzawa.vcxproj -> C:\Users\Razor\Desktop\Mario-Ozawa-Game - Copy\Debug\Aladdin.pdb (Full PDB)
