@@ -354,7 +354,7 @@ void Aladdin::Hit()
 	if (this->_State != HIT)
 		_curSprite = new Sprite(ResourceMng::GetInst()->GetTexture("image/aladdin.png"), 598, 603, 50);
 	this->_State = HIT;
-	this->_isHanging = false;
+	this->_isControlable = false;
 	return;
 }
 

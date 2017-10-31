@@ -107,7 +107,8 @@ void PlaySence::_OnKeyUp(int keyCode)
 {
 	if (!_aladdin->getControlable())
 		return;
-
+	if (_aladdin->isHanging() || _aladdin->isClimbing())
+		return;
 	if (keyCode == DIK_RIGHT || keyCode == DIK_LEFT)
 		_aladdin->Stop();
 }
