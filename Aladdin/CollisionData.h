@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 //#include "MyObject.h"
 enum EObject
 {
@@ -6,13 +6,29 @@ enum EObject
 	APPLE,
 	SWORD,
 	KNIFE,
+	POT, // cái nồi úp xuống
 	ROPE,
-	BURNING_LAND,
+	BURNING_GROUND,
 	HANGER,
 	GROUND,
 	FALL_GROUND,
 	STAIR,
-	BOUNCER
+	BOUNCER,
+	THROW_CIVILIAN, // thèn phóng dao
+	SWORD_GUARD, // thèn cầm kiếm bình thường
+	THIN_SWORD_GUARD, //thèn cầm kiếm gầy
+	FAT_SWORD_GUARD, // thèn cầm kiếm mập
+	BASKET_CIVILIAN, // cái gì giống cái hủ mà có cái ch ân đó, không biết đặt tên gì hết
+	JAFAR, // con boss lúc còn hình người
+	CAMEL, // lạc đà
+	GENIE,// thèn đèn
+	PEDDLER, //người bán rong
+	BOTTLE,
+	APPLE_ITEM,
+	GENIE_HEAD,
+	JEWEL,
+	EXTRA_HEALTH,
+	LIFE_UP
 };
 enum EDirect
 {
@@ -51,8 +67,10 @@ enum AladdinState{
 	HANG_MOVE,
 	HANG_THROW,
 	HANG_SLASH,
+	HANG_RELEASE,
 	BOUNCE,
-	LANDING,
+	FALL,
+	LAND,
 	BRAKE,
 	HIT,
 	DEAD,

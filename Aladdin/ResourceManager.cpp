@@ -6,17 +6,11 @@ ResourceMng* ResourceMng::_instance = NULL;
 ResourceMng::ResourceMng()
 {
 	//SURFACE
-	_listSurface.push_back(new SURFACE("image/imgBgGame.png"));
-	_listSurface.push_back(new SURFACE("image/imgBgGame2.png"));
 	_listSurface.push_back(new SURFACE("image/imgBgMenu.png"));
-	_listSurface.push_back(new SURFACE("image/imgBgOption.png"));
-	_listSurface.push_back(new SURFACE("image/imgBgCredit.png"));
+
 
 
 	//TEXTURE
-	//intro sence
-	_listTexture.push_back(new TEXTURE("image/imgLogo.png", 1, 1, 1));
-	//---end intro
 
 	//play sence
 	_listTexture.push_back(new TEXTURE("image/AgrabahMarket.png", 1, 2, 2));

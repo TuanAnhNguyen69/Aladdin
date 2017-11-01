@@ -22,11 +22,11 @@ PlaySence::~PlaySence(void)
 		_QuadTree = NULL;
 	}
 
-	if(_Camera != NULL)
-	{
-		delete _Camera;
-		_Camera = NULL;
-	}
+	//if(_Camera != NULL)
+	//{
+	//	delete _Camera;
+	//	_Camera = NULL;
+	//}
 
 	if(_aladdin != NULL)
 	{
@@ -54,7 +54,6 @@ void PlaySence::_Load()
 
 	MapLoader::TranslateMap(_QuadTree, _BackgroundMng, _aladdin, _timeForLevel);
 	_BackgroundMng->Translate();
-	_Camera = new Camera(CRECT(GL_WndSize));
 
 	sprSmoke = new Sprite(ResourceMng::GetInst()->GetTexture("image/healthMeter.png"), 200);
 
@@ -84,14 +83,24 @@ void PlaySence::_OnKeyDown(int keyCode)
 		_aladdin->Hit();
 	}
 
+	if (keyCode == DIK_C) {
+		_aladdin->Climb();
+	}
+
+	if (keyCode == DIK_Q) {
+		_aladdin->Land();
+	}
+
+	if (keyCode == DIK_T) {
+		_aladdin->Bounce();
+	}
+
 	if (!_aladdin->getControlable())
 		return;
 
 	_aladdin->resetStandingTime();
-	if (keyCode == DIK_RIGHT)
-		_aladdin->TurnRight();
-	else if (keyCode == DIK_LEFT)
-		_aladdin->TurnLeft();
+	if (keyCode == DIK_RIGHT || keyCode == DIK_LEFT)
+		_aladdin->Turn(keyCode);
 	else if (keyCode == DIK_J)
 		_aladdin->Throw();
 	else if (keyCode == DIK_L)
@@ -107,8 +116,13 @@ void PlaySence::_OnKeyUp(int keyCode)
 {
 	if (!_aladdin->getControlable())
 		return;
-	if (_aladdin->isHanging() || _aladdin->isClimbing())
+	if (_aladdin->isHanging())
 		return;
+
+	if (_aladdin->isClimbing())
+		if (keyCode == DIK_UP || keyCode == DIK_DOWN)
+			_aladdin->Stop();
+
 	if (keyCode == DIK_RIGHT || keyCode == DIK_LEFT)
 		_aladdin->Stop();
 }
@@ -124,17 +138,19 @@ void PlaySence::_ProcessInput()
 	} else if (_game->IsKeyDown(DIK_DOWN)) {
 		if (_aladdin->isClimbing())
 			_aladdin->Move(DIK_DOWN);
-		_aladdin->Sit();
+		else
+			_aladdin->Sit();
 	} else if (_game->IsKeyDown(DIK_UP)) {
 		if (_aladdin->isClimbing())
 			_aladdin->Move(DIK_UP);
-		_aladdin->LookUp();
+		else
+			_aladdin->LookUp();
 	} else {
 		if (_aladdin->isHanging())
 			_aladdin->Hang();
 		else if (_aladdin->isClimbing())
 			_aladdin->Climb();
-		else
+		else if (_aladdin->isOnGround())
 			_aladdin->Stand();
 	}
 }
@@ -149,8 +165,8 @@ void PlaySence::_UpdateRender(int time)
 
 #pragma region Begin Render
 	D3DXMATRIX mat;
-	float x = _Camera->GetRect().Left;
-	float y = _Camera->GetRect().Top;
+	float x = _aladdin->_camera->GetRect().Left;
+	float y = _aladdin->_camera->GetRect().Top;
 	D3DXVECTOR2 trans(- x, - y);
 	D3DXMatrixTransformation2D(&mat, NULL, 0.0f, NULL, NULL, 0.0f, &trans);
 	GLSpriteHandler->SetTransform(&mat);
@@ -164,15 +180,12 @@ void PlaySence::_UpdateRender(int time)
 		_timeForLevel -= time;
 	}
 	
-	_Camera->Update(_aladdin);
 	RECT r = GL_WndSize;
 	r.top = GL_Height - _alpha * GL_Height;
 
-	_BackgroundMng->UpdateRender(_Camera->GetCameraExpand(), time);
+	_BackgroundMng->UpdateRender(_aladdin->_camera->GetCameraExpand(), time);
 	
-	//_aladdin->Update(time);
-
-	_QuadTree->UpdateRender(_Camera->GetCameraExpand(), _aladdin, time);
+	_QuadTree->UpdateRender(_aladdin->_camera->GetCameraExpand(), _aladdin, time);
 	
 	_aladdin->Render();
 	
@@ -183,7 +196,7 @@ void PlaySence::_UpdateRender(int time)
 		//////////////////////////////////////////////////////////////////////////
 		//fix lỗi camera còn di chuyển sau khi game over
 		_aladdin->_vx = 0;
-		_Camera->_vx = 0;
+		_aladdin->_camera->_vx = 0;
 		//////////////////////////////////////////////////////////////////////////
 
 		GL_CurForm = 0;
@@ -236,13 +249,6 @@ void PlaySence::_UpdateRender(int time)
 	GLSpriteHandler->End();
 #pragma endregion
 
-	//mario complete map, go ahead
-	if(_aladdin->_x >= GL_MapW - 10)
-	{
-		_aladdin->TurnRight();
-		_aladdin->_vx = 0;
-	}
-
 	//check complete map pppppppppppppppppppppppppppppppppppppppppppppppppppppp
 	if(_aladdin->GetRect().Right >= GL_MapW)
 	{
@@ -277,11 +283,11 @@ void PlaySence::LoadNewMap(void)
 		_BackgroundMng = NULL;
 	}
 
-	if(_Camera != NULL)
+	/*if(_Camera != NULL)
 	{
 		delete _Camera;
 		_Camera = NULL;
-	}
+	}*/
 
 	//Load new game
 	MapLoader::LoadMapFormFile(MapLoader::_mapNumber + 1, true, true, true, true);
@@ -289,7 +295,7 @@ void PlaySence::LoadNewMap(void)
 	CRECT mapRECT = CRECT(0, 0, GL_MapW, GL_MapH);
 	_QuadTree = new QuadTree(mapRECT);
 	_BackgroundMng = new BackgroundManager();
-	_Camera = new Camera(CRECT(GL_WndSize));
+	//_Camera = new Camera(CRECT(GL_WndSize));
 
 	MapLoader::TranslateMap(_QuadTree, _BackgroundMng, _aladdin, _timeForLevel);
 	_BackgroundMng->Translate();

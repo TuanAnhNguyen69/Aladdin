@@ -1,0 +1,404 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="dsutil.cpp">
+      <Filter>Kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="SoundDev.cpp">
+      <Filter>Kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="Sprite.cpp">
+      <Filter>Kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="Writer.cpp">
+      <Filter>Kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="BackgroundManager.cpp">
+      <Filter>Management</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Management</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Management</Filter>
+    </ClCompile>
+    <ClCompile Include="Global.cpp">
+      <Filter>Management</Filter>
+    </ClCompile>
+    <ClCompile Include="ListCollisionData.cpp">
+      <Filter>Management</Filter>
+    </ClCompile>
+    <ClCompile Include="MapLoader.cpp">
+      <Filter>Management</Filter>
+    </ClCompile>
+    <ClCompile Include="QuadTreeNode.cpp">
+      <Filter>Management</Filter>
+    </ClCompile>
+    <ClCompile Include="QuadTree.cpp">
+      <Filter>Management</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceManager.cpp">
+      <Filter>Management</Filter>
+    </ClCompile>
+    <ClCompile Include="SoundManager.cpp">
+      <Filter>Management</Filter>
+    </ClCompile>
+    <ClCompile Include="TileMap.cpp">
+      <Filter>Management</Filter>
+    </ClCompile>
+    <ClCompile Include="CollisionData.cpp">
+      <Filter>Management</Filter>
+    </ClCompile>
+    <ClCompile Include="ChangeMapSence.cpp">
+      <Filter>Scences</Filter>
+    </ClCompile>
+    <ClCompile Include="CreditSence.cpp">
+      <Filter>Scences</Filter>
+    </ClCompile>
+    <ClCompile Include="GameSence.cpp">
+      <Filter>Scences</Filter>
+    </ClCompile>
+    <ClCompile Include="IntroSence.cpp">
+      <Filter>Scences</Filter>
+    </ClCompile>
+    <ClCompile Include="LoseGameSence.cpp">
+      <Filter>Scences</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuSence.cpp">
+      <Filter>Scences</Filter>
+    </ClCompile>
+    <ClCompile Include="OptionSence.cpp">
+      <Filter>Scences</Filter>
+    </ClCompile>
+    <ClCompile Include="PlaySence.cpp">
+      <Filter>Scences</Filter>
+    </ClCompile>
+    <ClCompile Include="StorySence.cpp">
+      <Filter>Scences</Filter>
+    </ClCompile>
+    <ClCompile Include="ZoomSence.cpp">
+      <Filter>Scences</Filter>
+    </ClCompile>
+    <ClCompile Include="MyObject.cpp">
+      <Filter>Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Aladdin.cpp">
+      <Filter>Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="AladdinGame.cpp">
+      <Filter>Management</Filter>
+    </ClCompile>
+    <ClCompile Include="Collision.cpp">
+      <Filter>Management</Filter>
+    </ClCompile>
+    <ClCompile Include="SwordGuard.cpp">
+      <Filter>Objects\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="ThinSwordGuard.cpp">
+      <Filter>Objects\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy.cpp">
+      <Filter>Objects\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="FatSwordGuard.cpp">
+      <Filter>Objects\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Terrain.cpp">
+      <Filter>Objects\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Item.cpp">
+      <Filter>Objects\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="Pot.cpp">
+      <Filter>Objects\Weapon</Filter>
+    </ClCompile>
+    <ClCompile Include="NonPlayableCharacters.cpp">
+      <Filter>Objects\NonPlayable</Filter>
+    </ClCompile>
+    <ClCompile Include="Camel.cpp">
+      <Filter>Objects\NonPlayable</Filter>
+    </ClCompile>
+    <ClCompile Include="ThrowCivilian.cpp">
+      <Filter>Objects\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="BasketCivilian.cpp">
+      <Filter>Objects\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Bottle.cpp">
+      <Filter>Objects\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="Jafar.cpp">
+      <Filter>Objects\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Peddler.cpp">
+      <Filter>Objects\NonPlayable</Filter>
+    </ClCompile>
+    <ClCompile Include="Genie.cpp">
+      <Filter>Objects\NonPlayable</Filter>
+    </ClCompile>
+    <ClCompile Include="Weapon.cpp">
+      <Filter>Objects\Weapon</Filter>
+    </ClCompile>
+    <ClCompile Include="Sword.cpp">
+      <Filter>Objects\Weapon</Filter>
+    </ClCompile>
+    <ClCompile Include="Knife.cpp">
+      <Filter>Objects\Weapon</Filter>
+    </ClCompile>
+    <ClCompile Include="Apple.cpp">
+      <Filter>Objects\Weapon</Filter>
+    </ClCompile>
+    <ClCompile Include="Bouncer.cpp">
+      <Filter>Objects\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="BurningGround.cpp">
+      <Filter>Objects\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Ground.cpp">
+      <Filter>Objects\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Hanger.cpp">
+      <Filter>Objects\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Rope.cpp">
+      <Filter>Objects\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Stair.cpp">
+      <Filter>Objects\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Rect.cpp">
+      <Filter>Kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="FallingGround.cpp">
+      <Filter>Objects\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Fire.cpp">
+      <Filter>Objects\Weapon</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="dxutil.h">
+      <Filter>Kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="dsutil.h">
+      <Filter>Kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="SoundDev.h">
+      <Filter>Kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="Sprite.h">
+      <Filter>Kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="Surface.h">
+      <Filter>Kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>Kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="Timer.h">
+      <Filter>Kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="Writer.h">
+      <Filter>Kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="BackgroundManager.h">
+      <Filter>Management</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Management</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>Management</Filter>
+    </ClInclude>
+    <ClInclude Include="Global.h">
+      <Filter>Management</Filter>
+    </ClInclude>
+    <ClInclude Include="ListCollisionData.h">
+      <Filter>Management</Filter>
+    </ClInclude>
+    <ClInclude Include="MapLoader.h">
+      <Filter>Management</Filter>
+    </ClInclude>
+    <ClInclude Include="QuadTreeNode.h">
+      <Filter>Management</Filter>
+    </ClInclude>
+    <ClInclude Include="QuadTree.h">
+      <Filter>Management</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManager.h">
+      <Filter>Management</Filter>
+    </ClInclude>
+    <ClInclude Include="SoundManager.h">
+      <Filter>Management</Filter>
+    </ClInclude>
+    <ClInclude Include="TileMap.h">
+      <Filter>Management</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionData.h">
+      <Filter>Management</Filter>
+    </ClInclude>
+    <ClInclude Include="ChangeMapSence.h">
+      <Filter>Scences</Filter>
+    </ClInclude>
+    <ClInclude Include="CreditSence.h">
+      <Filter>Scences</Filter>
+    </ClInclude>
+    <ClInclude Include="GameSence.h">
+      <Filter>Scences</Filter>
+    </ClInclude>
+    <ClInclude Include="IntroSence.h">
+      <Filter>Scences</Filter>
+    </ClInclude>
+    <ClInclude Include="ISence.h">
+      <Filter>Scences</Filter>
+    </ClInclude>
+    <ClInclude Include="LoseGameSence.h">
+      <Filter>Scences</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuSence.h">
+      <Filter>Scences</Filter>
+    </ClInclude>
+    <ClInclude Include="OptionSence.h">
+      <Filter>Scences</Filter>
+    </ClInclude>
+    <ClInclude Include="PlaySence.h">
+      <Filter>Scences</Filter>
+    </ClInclude>
+    <ClInclude Include="StorySence.h">
+      <Filter>Scences</Filter>
+    </ClInclude>
+    <ClInclude Include="ZoomSence.h">
+      <Filter>Scences</Filter>
+    </ClInclude>
+    <ClInclude Include="MyObject.h">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Aladdin.h">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="AladdinGame.h">
+      <Filter>Management</Filter>
+    </ClInclude>
+    <ClInclude Include="Collision.h">
+      <Filter>Management</Filter>
+    </ClInclude>
+    <ClInclude Include="SweptAABB.h">
+      <Filter>Management</Filter>
+    </ClInclude>
+    <ClInclude Include="SwordGuard.h">
+      <Filter>Objects\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="ThinSwordGuard.h">
+      <Filter>Objects\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy.h">
+      <Filter>Objects\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="FatSwordGuard.h">
+      <Filter>Objects\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Terrain.h">
+      <Filter>Objects\Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="Item.h">
+      <Filter>Objects\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="Pot.h">
+      <Filter>Objects\Weapon</Filter>
+    </ClInclude>
+    <ClInclude Include="NonPlayableCharacters.h">
+      <Filter>Objects\NonPlayable</Filter>
+    </ClInclude>
+    <ClInclude Include="Camel.h">
+      <Filter>Objects\NonPlayable</Filter>
+    </ClInclude>
+    <ClInclude Include="ThrowCivilian.h">
+      <Filter>Objects\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="BasketCivilian.h">
+      <Filter>Objects\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Bottle.h">
+      <Filter>Objects\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="Jafar.h">
+      <Filter>Objects\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Peddler.h">
+      <Filter>Objects\NonPlayable</Filter>
+    </ClInclude>
+    <ClInclude Include="Genie.h">
+      <Filter>Objects\NonPlayable</Filter>
+    </ClInclude>
+    <ClInclude Include="Weapon.h">
+      <Filter>Objects\Weapon</Filter>
+    </ClInclude>
+    <ClInclude Include="Sword.h">
+      <Filter>Objects\Weapon</Filter>
+    </ClInclude>
+    <ClInclude Include="Knife.h">
+      <Filter>Objects\Weapon</Filter>
+    </ClInclude>
+    <ClInclude Include="Apple.h">
+      <Filter>Objects\Weapon</Filter>
+    </ClInclude>
+    <ClInclude Include="Bouncer.h">
+      <Filter>Objects\Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="BurningGround.h">
+      <Filter>Objects\Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="Ground.h">
+      <Filter>Objects\Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="Hanger.h">
+      <Filter>Objects\Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="Rope.h">
+      <Filter>Objects\Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="Stair.h">
+      <Filter>Objects\Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="Rect.h">
+      <Filter>Kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="FallingGround.h">
+      <Filter>Objects\Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="Fire.h">
+      <Filter>Objects\Weapon</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Kernel">
+      <UniqueIdentifier>{b5f55926-4638-4c8b-b669-4250a69ba7eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Management">
+      <UniqueIdentifier>{3f0914ee-6bd4-454a-bc2e-20687b8a0def}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scences">
+      <UniqueIdentifier>{6537facf-d87a-48de-be32-94112925982a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects">
+      <UniqueIdentifier>{6826907f-2817-439b-9133-55682908879e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\Enemy">
+      <UniqueIdentifier>{0e847123-b13f-4e1d-840d-3d2a2e22318b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\Item">
+      <UniqueIdentifier>{a09f4ba6-086a-42f2-801f-6351321310d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\Terrain">
+      <UniqueIdentifier>{eaa6c03b-6bec-45ad-a8b4-83a7914e199e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\Weapon">
+      <UniqueIdentifier>{644dc334-227d-4459-b169-8b790132f0cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\NonPlayable">
+      <UniqueIdentifier>{006ebc33-5585-4788-98fe-7d4536085787}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

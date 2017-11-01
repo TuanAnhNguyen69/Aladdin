@@ -1,7 +1,7 @@
 ﻿#pragma once
 
 #include "gamesence.h"
-#include "Mario.h"
+#include "Aladdin.h"
 #include "QuadTree.h"
 #include "Camera.h"
 #include "MapLoader.h"
@@ -19,7 +19,6 @@ class PlaySence :
 {
 public:
 	QuadTree*	_QuadTree;
-	Camera*		_Camera;
 	BackgroundManager*	_BackgroundMng;
 
 	// tieu nun

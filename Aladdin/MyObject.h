@@ -6,61 +6,66 @@
 using namespace std;
 
 //super class for all object in game
-class MyObject
+struct Box
+{
+	Box() {}
+
+	Box(float x, float y, float w, float h, float vx, float vy)
+	{
+		_x = x;
+		_y = y;
+		_w = w;
+		_h = h;
+		_vx = vx;
+		_vy = vy;
+	}
+
+	Box(float x, float y, float w, float h)
+	{
+		_x = x;
+		_y = y;
+		_w = w;
+		_h = h;
+		_vx = 0;
+		_vy = 0;
+	}
+
+	// position of top-left corner
+	float _x, _y;
+
+	// dimensions
+	float _w, _h;
+
+	// velocity
+	float _vx, _vy;
+};
+
+class MyObject : public Box
 {
 public:
 	AladdinState _State;
-	
-	// tieu nun
-	float _x;
-	float _y;
-
-	//next position
-	float _nextx;
-	float _nexty;
-	
-	//velocity
-	float _vx;
-	float _vy;
-	
+	bool _alive;
 	//id to regonize what it is
 	EObject _ID;
-	
+
 	//check if it is turn left or turn right
 	//0: Left | 1: Right
-	bool _turnLeft;
+	bool _turnRight;
 	//end tieu nun
 
 	ListCollisionData _listCollisionData;
 
+	MyObject() {}
 	MyObject(float x, float y);
 	//MyObject(const MyObject* obj);
 	virtual ~MyObject(void);
 
 	virtual CRECT GetRect();
-
-	//obj can check collision with other or not
-	virtual bool CanCollide();
-
 	//obj is alive, can update and render
 	virtual bool IsAlive();
 
 	virtual void Update(int time);
 
 	virtual void Render();
-
-	//check collision with another obj
-	virtual void CheckCollision(MyObject* obj);
-
-	// tieu nun
-	virtual void CheckTitleCollision(float &_vx,float &_vy,float &_nextX,float &_nextY,float _maxWidth,float _maxHeight,int _width,int _height);
-
-	EDirect GetCollisionDirection(CRECT r1, CRECT r2);
-
-	void RealTimeCollision(CRECT r1, CRECT r2);
-	virtual void RealTimeCollision1(CRECT r1, MyObject *obj,int indexObject,int time);
-	virtual float GetDistance(float x0,float y0,float x1,float y1);
-
-	virtual void UpdateRealTimeCollision(int time,vector<MyObject*>*listcollision);
 };
 

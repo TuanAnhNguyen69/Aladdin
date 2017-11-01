@@ -14,6 +14,8 @@ public:
 	//start index
 	int _start;
 
+	bool _direction;
+
 	//end index
 	int _end;
 
@@ -29,6 +31,8 @@ public:
 	Sprite::Sprite(){}
 	Sprite::Sprite(TEXTURE* texture, int timeAnimation);
 	Sprite::Sprite(TEXTURE* texture, int start, int end, int timeAnimation);
+
+	void setDirection(bool direction);
 
 	//increase index
 	void Next();

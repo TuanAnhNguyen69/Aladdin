@@ -9,14 +9,21 @@ Sprite::Sprite(TEXTURE* texture, int start, int end, int timeAnimation)
 	_end = end;
 	_timeAni = timeAnimation;
 	_index = start;
+	_direction = 1;
 	_timeLocal = 0;
 
 	_color = D3DCOLOR_ARGB(255, 255, 255, 255);
 }
 
+void Sprite::setDirection(bool direction)
+{
+	this->_direction = direction;
+}
+
 Sprite::Sprite(TEXTURE* texture, int timeAnimation)
 	: _texture(texture)
 {
+	_direction = 1;
 	_start = 0;
 	_end = _texture->Count - 1;
 	_timeAni = timeAnimation;
@@ -34,9 +41,16 @@ Sprite::~Sprite()
 
 void Sprite::Next() 
 {
+	if (!_direction) {
+		_index--;
+		if (_index < _start)
+			_index = _end;
+		return;
+	}
+
 	_index++;
-	if(_index > _end)
-		_index = _start;
+	if (_index > _end)
+		_index = _start;		
 }
 
 void Sprite::Reset()

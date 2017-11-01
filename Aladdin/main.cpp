@@ -4,7 +4,7 @@
 
 
 #include <windows.h>
-#include "MarioGame.h"
+#include "AladdinGame.h"
 #include "Global.h"
 #include "ResourceManager.h"
 

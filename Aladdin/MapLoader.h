@@ -6,7 +6,7 @@
 #include "QuadTree.h"
 #include "BackgroundManager.h"
 #include "TileMap.h"
-#include "Mario.h"
+#include "Aladdin.h"
 
 #ifndef TIME_FOR_LEVEL
 	#define TIME_FOR_LEVEL 150000

@@ -2,7 +2,7 @@
 
 #include "QuadTreeNode.h"
 #include "MyObject.h"
-#include "Mario.h"
+#include "Aladdin.h"
 
 //size expand camera to update and check collision
 //if the rect is equal SCREEN(800x600), some object out of it will be stop working, and it is so urgly
