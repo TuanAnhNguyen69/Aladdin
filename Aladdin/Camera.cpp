@@ -19,8 +19,8 @@ void Camera::Update(MyObject* player)
 	float haftWndHeight = GL_Height/2;
 	
 	//camera position
-	float cameraX = _rectCamera.Left;
-	float cameraY = _rectCamera.Top;
+	float cameraX = _rectCamera._x;
+	float cameraY = _rectCamera._y;
 	
 	//player position
 	float playerX = player->_x;
@@ -51,15 +51,15 @@ void Camera::Update(MyObject* player)
 	}
 	
 	//-----------------------------------------------------
-	_rectCamera.Left		+= 0.1 * _vx;
+	_rectCamera._x		+= 0.1 * _vx;
 	_rectCamera.Right		+= 0.1 * _vx;
 	
-	_rectCamera.Top			+= 0.1 * _vy;
+	_rectCamera._y			+= 0.1 * _vy;
 	_rectCamera.Bottom		+= 0.1 * _vy;
 	//-----------------------------------------------------
 
 	//too top
-	if(_rectCamera.Top < 0)
+	if(_rectCamera._y < 0)
 	{
 		_rectCamera.SetY(0);
 	}
@@ -71,7 +71,7 @@ void Camera::Update(MyObject* player)
 	}
 
 	//too left
-	if(_rectCamera.Left < 0)
+	if(_rectCamera._x < 0)
 	{
 		_rectCamera.SetX(0);
 	}
@@ -89,20 +89,20 @@ CRECT Camera::GetCameraExpand()
 {
 	CRECT r = _rectCamera;
 	
-	if(r.Left >= EXPAND_CAMERA)
-		r.Left -= EXPAND_CAMERA;
+	if(r._x >= EXPAND_CAMERA)
+		r._x -= EXPAND_CAMERA;
 	else
-		r.Left = 0;
+		r._x = 0;
 	
 	if(r.Right <= GL_MapW - EXPAND_CAMERA)
 		r.Right += EXPAND_CAMERA;
 	else
 		r.Right = GL_MapW;
 
-	if(r.Top >= EXPAND_CAMERA)
-		r.Top -= EXPAND_CAMERA;
+	if(r._y >= EXPAND_CAMERA)
+		r._y -= EXPAND_CAMERA;
 	else
-		r.Top = 0;
+		r._y = 0;
 	
 	if(r.Bottom <= GL_MapH - EXPAND_CAMERA)
 		r.Bottom += EXPAND_CAMERA;

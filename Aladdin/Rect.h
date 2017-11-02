@@ -7,7 +7,7 @@
 class CRECT
 {
 public:
-	float Left, Top, Right, Bottom;
+	float _x, _y, Right, Bottom;
 	
 	CRECT(void);
 	CRECT(RECT rect);

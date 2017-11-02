@@ -10,8 +10,8 @@ MyObject::MyObject(float x, float y)
 	_y = y;
 	_vx = 0;
 	_vy = 0;
-	_w = 0;
-	_h = 0;
+	Right = 0;
+	Bottom = 0;
 	_alive = true;
 	_turnRight = true;
 }
@@ -38,4 +38,8 @@ void MyObject::Update(int time)
 void MyObject::Render()
 {
 
+}
+
+void MyObject::onColision()
+{
 }

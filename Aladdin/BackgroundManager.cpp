@@ -54,12 +54,12 @@ void BackgroundManager::UpdateRender(CRECT camera, int time)
 	if(_board == NULL)
 		return;
 	//
-	int startX = camera.Left / TILE - BG_EXPAND_X;
+	int startX = camera._x / TILE - BG_EXPAND_X;
 	startX = (startX < 0) ? 0 : startX;
 	int endX = camera.Right / TILE + BG_EXPAND_X;
 	endX = (endX > _mapW) ? _mapW : endX;
 
-	int startY = camera.Top / TILE - BG_EXPAND_Y;
+	int startY = camera._y / TILE - BG_EXPAND_Y;
 	startY = (startY < 0) ? 0 : startY;
 	int endY = camera.Bottom / TILE + BG_EXPAND_Y;
 	endY = (endY > _mapH) ? _mapH : endY;

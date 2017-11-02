@@ -26,46 +26,46 @@ QuadTreeNode::~QuadTreeNode(void)
 void QuadTreeNode::CreateSubNodes()
 {
 	 // the smallest sub node has an area 
-	if (_bound.Right - _bound.Left < MIN_NODE_SIZE)
+	if (_bound.Right - _bound._x < MIN_NODE_SIZE)
 	{
 		return;
 	}
 
-	if (_bound.Bottom - _bound.Top < MIN_NODE_SIZE)
+	if (_bound.Bottom - _bound._y < MIN_NODE_SIZE)
 	{
 		return;
 	}
 
-	float halfWidth = (_bound.Right - _bound.Left) / 2;
-	float halfHeight = (_bound.Bottom - _bound.Top) / 2;
+	float halfWidth = (_bound.Right - _bound._x) / 2;
+	float halfHeight = (_bound.Bottom - _bound._y) / 2;
 
 	_listChild = new QuadTreeNode[4]();
 
 	_listChild[0]._bound = (
 		CRECT(
-		_bound.Left, 
-		_bound.Top, 
-		_bound.Left + halfWidth, 
-		_bound.Top + halfHeight));
+		_bound._x, 
+		_bound._y, 
+		_bound._x + halfWidth, 
+		_bound._y + halfHeight));
 
 	_listChild[1]._bound = (
 		CRECT(
-		_bound.Left + halfWidth, 
-		_bound.Top,
+		_bound._x + halfWidth, 
+		_bound._y,
 		_bound.Right,
-		_bound.Top + halfHeight));
+		_bound._y + halfHeight));
 
 	_listChild[2]._bound = (
 		CRECT(
-		_bound.Left,
-		_bound.Top + halfHeight,
-		_bound.Left + halfWidth,
+		_bound._x,
+		_bound._y + halfHeight,
+		_bound._x + halfWidth,
 		_bound.Bottom));
 
 	_listChild[3]._bound = (
 		CRECT(
-		_bound.Left + halfWidth,
-		_bound.Top + halfHeight,
+		_bound._x + halfWidth,
+		_bound._y + halfHeight,
 		_bound.Right,
 		_bound.Bottom));
 }
@@ -78,8 +78,8 @@ void QuadTreeNode::Insert(MyObject* obj)
 	}
 
 	//ko dc chia nho
-	if (_bound.Right - _bound.Left < 2 * MIN_NODE_SIZE ||
-		_bound.Bottom - _bound.Top < 2 * MIN_NODE_SIZE)
+	if (_bound.Right - _bound._x < 2 * MIN_NODE_SIZE ||
+		_bound.Bottom - _bound._y < 2 * MIN_NODE_SIZE)
 	{
 		_content->push_back(obj);
 		return;

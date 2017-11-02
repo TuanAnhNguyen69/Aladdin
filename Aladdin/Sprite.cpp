@@ -122,7 +122,7 @@ void Sprite::RenderRotate(int x, int y, float depth)
 
 	GLSpriteHandler->SetTransform(&oldMt);
 }
-
+       
 // tieu nun
 void Sprite::RenderRect(int x, int y, RECT Rect, float depth)
 {

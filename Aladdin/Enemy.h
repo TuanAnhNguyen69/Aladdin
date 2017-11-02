@@ -6,11 +6,11 @@ class Enemy :
 protected:
 	int _health;
 	bool _isActive;
-	Sprite _moveSprite;
-	Sprite _attackSprite;
-	Sprite _activeSprite;
-	Sprite _hitSprite;
-	Sprite _deadSprite;
+	Sprite* _moveSprite;
+	Sprite* _attackSprite;
+	Sprite* _activeSprite;
+	Sprite* _hitSprite;
+	Sprite* _deadSprite;
 public:
 	Enemy();
 	Enemy(float x, float y);
@@ -19,8 +19,8 @@ public:
 	virtual void Active();
 	virtual void AppleHit();
 	virtual void Dead();
-	//void Update();
-	//void Render();
+	void Update(int time);
+	void Render();
 	~Enemy();
 };
 

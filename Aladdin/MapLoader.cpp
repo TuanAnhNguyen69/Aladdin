@@ -263,8 +263,8 @@ void MapLoader::TranslateMap (QuadTree* quadtree, BackgroundManager* background,
 		timeInGame = _timeInGame;
 
 	//mario
-	mario->_x = _mariox * TILE;
-	mario->_y = _marioy * TILE;
+	//mario->_x = _mariox * TILE;
+	//mario->_y = _marioy * TILE;
 
 	if(_curForm > -1 && _nextForm > -1 && _gold > -1 && _life > -1 && _exp > -1 && _marioState > -1)
 	{

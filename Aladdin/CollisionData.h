@@ -32,9 +32,9 @@ enum EObject
 };
 enum EDirect
 {
-	Left,
+	_x,
 	Right,
-	Top,
+	_y,
 	Bottom,
 	None
 };

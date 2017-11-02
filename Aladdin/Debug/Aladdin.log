@@ -1,12 +1,1 @@
-﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (MarioOzawa.vcxproj).  This can lead to incorrect clean and rebuild behavior.
-  ThinSwordGuard.cpp
-  c:\users\razor\desktop\game\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-c:\users\razor\desktop\game\aladdin\texture.h(49): warning C4838: conversion from 'UINT' to 'LONG' requires a narrowing conversion
-  Generating Code...
-  Skipping... (no relevant changes detected)
-  PlaySence.cpp
-  MenuSence.cpp
-  LoseGameSence.cpp
-  AladdinGame.cpp
-  Aladdin.vcxproj -> C:\Users\Razor\Desktop\Game\Debug\Aladdin.exe
-  Aladdin.vcxproj -> C:\Users\Razor\Desktop\Game\Debug\Aladdin.pdb (Full PDB)
+﻿

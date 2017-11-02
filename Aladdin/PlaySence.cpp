@@ -47,6 +47,8 @@ void PlaySence::_Load()
 	_timeForLevel = TIME_FOR_LEVEL;
 
 	_aladdin = new Aladdin(50, 50);
+	_test = new ThinSwordGuard(200, 50);
+	_test->Move();
 	_BackgroundMng = new BackgroundManager();
 
 	CRECT mapRECT = CRECT(0, 0, GL_MapW, GL_MapH);
@@ -158,7 +160,7 @@ void PlaySence::_ProcessInput()
 void PlaySence::_UpdateRender(int time)
 {
 	_aladdin->Update(time);
-
+	_test->Update(time);
 	updateHealthMeter();
 	sprSmoke->Update(time);
 	if(! IsVisiable)
@@ -166,8 +168,8 @@ void PlaySence::_UpdateRender(int time)
 
 #pragma region Begin Render
 	D3DXMATRIX mat;
-	float x = _aladdin->_camera->GetRect().Left;
-	float y = _aladdin->_camera->GetRect().Top;
+	float x = _aladdin->_camera->GetRect()._x;
+	float y = _aladdin->_camera->GetRect()._y;
 	D3DXVECTOR2 trans(- x, - y);
 	D3DXMatrixTransformation2D(&mat, NULL, 0.0f, NULL, NULL, 0.0f, &trans);
 	GLSpriteHandler->SetTransform(&mat);
@@ -189,6 +191,7 @@ void PlaySence::_UpdateRender(int time)
 	_QuadTree->UpdateRender(_aladdin->_camera->GetCameraExpand(), _aladdin, time);
 	
 	_aladdin->Render();
+	_test->Render();
 	
 	//check fail game
 	if(_aladdin->_life <= 0 && _aladdin->_State == DEAD && 
