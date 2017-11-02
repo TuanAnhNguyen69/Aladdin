@@ -158,6 +158,7 @@ void PlaySence::_ProcessInput()
 void PlaySence::_UpdateRender(int time)
 {
 	_aladdin->Update(time);
+
 	updateHealthMeter();
 	sprSmoke->Update(time);
 	if(! IsVisiable)

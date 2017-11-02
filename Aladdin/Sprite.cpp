@@ -9,7 +9,7 @@ Sprite::Sprite(TEXTURE* texture, int start, int end, int timeAnimation)
 	_end = end;
 	_timeAni = timeAnimation;
 	_index = start;
-	_direction = 1;
+	_direction = true;
 	_timeLocal = 0;
 
 	_color = D3DCOLOR_ARGB(255, 255, 255, 255);
@@ -18,6 +18,17 @@ Sprite::Sprite(TEXTURE* texture, int start, int end, int timeAnimation)
 void Sprite::setDirection(bool direction)
 {
 	this->_direction = direction;
+}
+
+Sprite::Sprite(const Sprite& sprite)
+{
+	this->_texture = sprite._texture;
+	this->_start = sprite._direction;
+	this->_end = sprite._end;
+	this->_timeAni = sprite._timeAni;
+	this->_timeLocal = sprite._timeLocal;
+	this->_color = sprite._color;
+
 }
 
 Sprite::Sprite(TEXTURE* texture, int timeAnimation)

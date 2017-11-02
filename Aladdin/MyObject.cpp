@@ -12,7 +12,6 @@ MyObject::MyObject(float x, float y)
 	_vy = 0;
 	_w = 0;
 	_h = 0;
-	_State = AladdinState::ALIVE;
 	_alive = true;
 	_turnRight = true;
 }
@@ -29,7 +28,7 @@ CRECT MyObject::GetRect()
 }
 
 bool MyObject::IsAlive(){
-	return (_State != DEAD);
+	return false;
 }
 
 void MyObject::Update(int time)

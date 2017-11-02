@@ -2,6 +2,8 @@
 
 #include "Rect.h"
 #include "ListCollisionData.h"
+#include "Sprite.h"
+
 
 using namespace std;
 
@@ -43,7 +45,7 @@ struct Box
 class MyObject : public Box
 {
 public:
-	AladdinState _State;
+	Sprite* _curSprite;
 	bool _alive;
 	//id to regonize what it is
 	EObject _ID;

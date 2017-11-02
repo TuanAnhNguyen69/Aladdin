@@ -29,6 +29,7 @@ public:
 	D3DXCOLOR _color;
 
 	Sprite::Sprite(){}
+	Sprite::Sprite(const Sprite &sprite);
 	Sprite::Sprite(TEXTURE* texture, int timeAnimation);
 	Sprite::Sprite(TEXTURE* texture, int start, int end, int timeAnimation);
 

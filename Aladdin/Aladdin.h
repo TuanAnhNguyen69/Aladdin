@@ -2,7 +2,6 @@
 #define _MARIO_H_
 
 
-#include "Sprite.h"
 #include "MyObject.h"
 #include "Camera.h"
 
@@ -29,8 +28,8 @@ protected:
 	int time;
 
 public:
+	AladdinState _State;
 	CRECT currentRECT;
-	Sprite* _curSprite;
 	Camera*		_camera;
 
 	int _point;
@@ -40,11 +39,11 @@ public:
 	int _jewel;
 
 	Aladdin(float x, float y);
-	virtual ~Aladdin(void);
+	~Aladdin(void);
 
-	virtual void Update(int time);
-	virtual void Render();
-	virtual CRECT GetRect();
+	void Update(int time);
+	void Render();
+	CRECT GetRect();
 	void Turn(int keyCode);
 	void Jump();
 	void Stand();

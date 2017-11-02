@@ -8,6 +8,7 @@
 #include "BackgroundManager.h"
 #include "TileMap.h"
 #include "ChangeMapSence.h"
+#include "ThinSwordGuard.h"
 #include <stdio.h>
 
 //time to complete a leve 5min
@@ -23,7 +24,7 @@ public:
 
 	// tieu nun
 	Aladdin*	_aladdin;
-
+	ThinSwordGuard* _test;
 	//check if this sence is visiable
 	bool IsVisiable;
 
