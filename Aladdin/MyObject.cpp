@@ -10,8 +10,8 @@ MyObject::MyObject(float x, float y)
 	_y = y;
 	_vx = 0;
 	_vy = 0;
-	Right = 0;
-	Bottom = 0;
+	_w = 0;
+	_h = 0;
 	_alive = true;
 	_turnRight = true;
 }
@@ -24,7 +24,7 @@ MyObject::~MyObject(void)
 
 CRECT MyObject::GetRect()
 {
-	return CRECT(_x, _y, _x + TILE, _y + TILE);
+	return CRECT(_x, _y, _w, _h);
 }
 
 bool MyObject::IsAlive(){
@@ -40,6 +40,6 @@ void MyObject::Render()
 
 }
 
-void MyObject::onColision()
+void MyObject::onCollision(MyObject * otherObject, int normalx, int normaly)
 {
 }

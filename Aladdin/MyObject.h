@@ -11,6 +11,7 @@ using namespace std;
 class MyObject : public CRECT
 {
 public:
+	int normalx, normaly;
 	float _vx, _vy;
 	Sprite* _curSprite;
 	bool _alive;
@@ -18,7 +19,7 @@ public:
 	EObject _ID;
 
 	//check if it is turn left or turn right
-	//0: _x | 1: Right
+	//0: _x | 1: _w
 	bool _turnRight;
 	//end tieu nun
 
@@ -36,6 +37,6 @@ public:
 
 	virtual void Render();
 
-	virtual void onColision();
+	virtual void onCollision(MyObject* otherObject, int normalx, int normaly);
 };
 

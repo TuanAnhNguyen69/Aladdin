@@ -7,19 +7,13 @@
 class CRECT
 {
 public:
-	float _x, _y, Right, Bottom;
+	float _x, _y, _w, _h;
 	
 	CRECT(void);
 	CRECT(RECT rect);
 	CRECT(float _left, float _top, float _right, float _bottom);
 	~CRECT(void);
-	RECT ToRECT();
 
-	//Kiểm tra va chạm với 1 CRECT khác
-	bool IsCollision (CRECT _Rect);
-
-	void SetX(float x);
-	void SetY(float y);
 	void Move(float x, float y);
 };
 

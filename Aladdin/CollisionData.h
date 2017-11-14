@@ -4,16 +4,15 @@ enum EObject
 {
 	ALADDIN, // = 0
 	APPLE,
-	SWORD,
 	KNIFE,
 	POT, // cái nồi úp xuống
 	ROPE,
-	BURNING_GROUND,
-	HANGER,
-	GROUND,
-	FALL_GROUND,
+	BURNING_GROUND, // bãi than
+	HANGER, // cây treo
+	GROUND, // nền
+	FALL_GROUND, // Mảnh nền rơi
 	STAIR,
-	BOUNCER,
+	BOUNCER, // Thanh nảy
 	THROW_CIVILIAN, // thèn phóng dao
 	SWORD_GUARD, // thèn cầm kiếm bình thường
 	THIN_SWORD_GUARD, //thèn cầm kiếm gầy
@@ -33,9 +32,9 @@ enum EObject
 enum EDirect
 {
 	_x,
-	Right,
+	_w,
 	_y,
-	Bottom,
+	_h,
 	None
 };
 enum AladdinState{

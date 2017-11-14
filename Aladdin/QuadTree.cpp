@@ -37,20 +37,20 @@ void QuadTree::UpdateRender(CRECT camera, Aladdin* mario, int time)
 	else
 		cameraCollision._x = 0;
 
-	if(cameraCollision.Right <= GL_MapW - COLLIDE_EXPAND)
-		cameraCollision.Right += COLLIDE_EXPAND;
+	if(cameraCollision._w <= GL_MapW - COLLIDE_EXPAND)
+		cameraCollision._w += COLLIDE_EXPAND;
 	else
-		cameraCollision.Right = GL_MapW;
+		cameraCollision._w = GL_MapW;
 
 	if(cameraCollision._y >= COLLIDE_EXPAND)
 		cameraCollision._y -= COLLIDE_EXPAND;
 	else
 		cameraCollision._y = 0;
 
-	if(cameraCollision.Bottom <= GL_MapH - COLLIDE_EXPAND)
-		cameraCollision.Bottom += COLLIDE_EXPAND;
+	if(cameraCollision._h <= GL_MapH - COLLIDE_EXPAND)
+		cameraCollision._h += COLLIDE_EXPAND;
 	else
-		cameraCollision.Bottom = GL_MapH;
+		cameraCollision._h = GL_MapH;
 #pragma endregion
 
 	vector<MyObject*>* listCollision = this->_rootNode->GetObj(camera);

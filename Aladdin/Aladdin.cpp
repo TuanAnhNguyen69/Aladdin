@@ -101,7 +101,7 @@ void Aladdin::Render()
 
 void Aladdin::Turn(int keyCode)
 {
-	if (keyCode == DIK_LEFT)
+	if (keyCode == DIK_LEFT) 
 		this->_turnRight = false;
 	else
 		this->_turnRight = true;
@@ -322,7 +322,7 @@ void Aladdin::Move(int keyCode)
 	if (_turnRight)
 		this->_vx = 5;
 	else
-		this->_vx = 5;
+		this->_vx = -5;
 
 	if (this->_State == JUMP_FORWARD || this->_State == JUMP   || this->_State == JUMP_SLASH 
 		|| this->_State == JUMP_THROW || this->_State == RUN_SLASH || this->_State == RUN_THROW)

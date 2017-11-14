@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace MapEditor
@@ -14,8 +16,7 @@ namespace MapEditor
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            MainForm _form = new MainForm();
-            Application.Run(_form);
+            Application.Run(new MapEditor());
         }
     }
 }

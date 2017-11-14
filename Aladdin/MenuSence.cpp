@@ -33,8 +33,6 @@ void MenuSence::_OnKeyDown(int keyCode){
 				_game->AddSence(pl);
 				this->_state = TransOff;
 			} else { //option
-				//do not stop sound
-				SoundManager::GetInst()->PlayEffSound(SOUND_E_SLIDE);
 				//goto option
 				OptionSence* ot= new OptionSence(_game, 100);
 				_game->AddSence(ot);
@@ -45,14 +43,12 @@ void MenuSence::_OnKeyDown(int keyCode){
 		case DIK_UP:
 			if(_curSelect > 0){
 				_curSelect--;
-				SoundManager::GetInst()->PlayEffSound(SOUND_E_CLICK);
 			}
 			break;
 
 		case DIK_DOWN:
 			if(_curSelect < MAX_MENU - 1){
 				_curSelect++;
-				SoundManager::GetInst()->PlayEffSound(SOUND_E_CLICK);
 			}
 			break;
 	}

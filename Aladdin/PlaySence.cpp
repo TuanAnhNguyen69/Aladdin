@@ -9,7 +9,6 @@
 PlaySence::PlaySence(Game* game, int timeAni)
 	: GameSence(game, timeAni)
 {
-	SoundManager::GetInst()->PlayBgSound(SOUND_B_GAME1);
 	_isExitting = false;
 	IsVisiable = true;
 }
@@ -254,7 +253,7 @@ void PlaySence::_UpdateRender(int time)
 #pragma endregion
 
 	//check complete map pppppppppppppppppppppppppppppppppppppppppppppppppppppp
-	if(_aladdin->GetRect().Right >= GL_MapW)
+	if(_aladdin->GetRect()._w >= GL_MapW)
 	{
 		//sound win game
 		//SoundManager::GetInst()->PlayEffSound(SOUND_E_WIN, false);
